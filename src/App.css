@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+/* general styling */
+* {
+          margin: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          -webkit-touch-callout: none;
+          -webkit-tap-highlight-color: transparent;
+          -webkit-appearance: none;
+          padding: 0;
+          scroll-behavior: smooth;
+}
+ 
+.gradient-background{background-image: linear-gradient(to right top, #f79b49, #df6665, #a44976, #583b6e, #08294b);}
+
+
+/* over writing the css of the card library */
+.rccs__card {width: 100% !important}
+@media screen and (max-width: 360px) {
+     .rccs {
+          width: 100% !important;
+     }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* over riding bootstrap  */
+.spinner-border{
+     border: 6px solid #f3f3f3;
+     border-top: 6px solid #3498db;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     margin: 5%;
 }
