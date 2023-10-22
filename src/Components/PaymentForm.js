@@ -150,7 +150,6 @@ function PaymentForm() {
                     body: JSON.stringify(customData),
                     
                     }).then((response) => {
-                         alert(response.status)
                          if (response.ok || response.status === 200) {
                               // Handle successful response (status code 200)
                               return response.json().then((data) => {
